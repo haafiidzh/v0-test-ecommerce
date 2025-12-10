@@ -99,9 +99,10 @@ export default function Home() {
                 <div className="relative group overflow-hidden rounded-xl h-64 cursor-pointer border border-border hover:border-primary transition-all">
                   <div className={`absolute inset-0 ${category.bgColor}`} />
                   <Image
-                    src={`/.jpg?height=300&width=400&query=${category.name}%20fashion%20clothing%20collection`}
+                    src={`/.jpg&query=${category.name}%20fashion%20clothing%20collection`}
                     alt={category.name}
-                    fill
+                    height={300}
+                    width={400}
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
